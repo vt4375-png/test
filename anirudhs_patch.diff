@@ -1,0 +1,14 @@
+--- 01_rearrange1.py	2025-07-30 13:37:12.041115000 -0400
++++ 01_rearrange2.py	2025-07-30 12:14:51.364871483 -0400
+@@ -1,8 +1,8 @@
+ import re
+ def rearrange_name(name):
+-	result = re.search(r"^([\w .]*), ([\w .]*)$",name)
++	result = re.search(r"^([\w .-]*), ([\w .-]*)$",name)
++	print('the change')	
+ 	if result==None:
+ 		return result
+-
+ 	return "{} {}".format(result[2], result[1])
+-print('checking')
++
